@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact Us - Free Solitaire Games</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Free Solitaire Games</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #007d00, #009900);
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #005f00;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #006400;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #007d00;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005f00;
+    }
+
+    footer {
+      background: #006400;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
 <body>
-<header><h1>Contact Us</h1></header>
-<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="contact.html">Contact</a><a href="how-to-play.html">How to Play</a></nav>
-<div class="container"><h2>Get in Touch</h2><p>Email us at contact@freesolitaire.com</p></div>
-<footer>&copy; 2025 Free Desktop Solitaire Games. All rights reserved.</footer>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms & Conditions</a>
+  <a href="contact.html">Contact</a>
+  <a href="howtoplay.html">How to Play</a>
+</nav>
+
+
+  <div class="container">
+    <h2>We'd love to hear from you!</h2>
+    <p>Have questions, suggestions, or just want to say hello? Fill out the form below and we’ll get back to you as soon as possible.</p>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Free Solitaire Games. All rights reserved.
+  </footer>
 </body>
 </html>
